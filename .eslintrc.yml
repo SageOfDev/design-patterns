@@ -1,0 +1,64 @@
+env:
+  commonjs: false
+  es2021: true
+  node: true
+  jest: true
+root: true
+parser: "@typescript-eslint/parser"
+parserOptions:
+  ecmaVersion: 2021
+plugins:
+  - "@typescript-eslint"
+extends: "eslint:recommended"
+globals:
+  Atomics: readonly
+  SharedArrayBuffer: readonly
+  NodeJS: true
+rules:
+  indent:
+    - error
+    - 2
+    - SwitchCase: 1
+  linebreak-style:
+    - error
+    - unix
+  no-case-declarations:
+    - off
+  no-undef:
+    - error
+  no-useless-escape:
+    - off
+  no-unused-vars:
+    - off # unused가 TS 이슈로 비정상 동작함
+  keyword-spacing: warn
+  comma-spacing: warn
+  space-infix-ops: warn
+  block-spacing: warn
+  dot-location: warn
+  func-call-spacing: warn
+  key-spacing: warn
+  no-multi-spaces: warn
+  no-return-assign: warn
+  no-unsafe-negation: warn
+  space-before-blocks: warn
+  space-in-parens: warn
+  spaced-comment: warn
+  template-curly-spacing: warn
+  comma-dangle:
+    - error
+    - objects: never
+      arrays: never
+      imports: never
+      exports: never
+      functions: never
+  object-curly-spacing:
+    - error
+    - never
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - never
+  "@typescript-eslint/explicit-function-return-type": error
+  "@typescript-eslint/no-explicit-any": warn

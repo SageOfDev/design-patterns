@@ -1,0 +1,5 @@
+.history/
+.idea/
+node_modules/
+node/converter-deprecated/
+dist/
